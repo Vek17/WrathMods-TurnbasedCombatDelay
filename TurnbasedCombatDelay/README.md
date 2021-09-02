@@ -1,4 +1,4 @@
-Allows you to alter the pause before turn based combat stats
+Allows you to alter the pause before turn based combat starts
 
 **How to install**
 
