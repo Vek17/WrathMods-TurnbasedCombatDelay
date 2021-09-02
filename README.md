@@ -1,4 +1,4 @@
-Custom difficulties default to the easiest versions of units and behaviors. This allows you to override to a desired difficulty with a custom difficulty.
+Allows you to alter the pause before turn based combat starts
 
 **How to install**
 
