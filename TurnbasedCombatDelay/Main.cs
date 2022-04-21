@@ -67,10 +67,9 @@ namespace TurnbasedCombatDelay {
 
             static bool Prefix(TurnBasedModeUIController __instance) {
                 if (__instance.m_CombatStartWindowVM == null) {
-                    __instance.HideTurnPanel();
                     __instance.m_CombatStartWindowVM = new CombatStartWindowVM(new Action(__instance.HideCombatStartWindow));
                     __instance.m_Config.CombatStartWindowView.Bind(__instance.m_CombatStartWindowVM);
-                    object p = DelayedInvoker.InvokeInTime(new Action(__instance.HideCombatStartWindow), Settings.Delay, true);
+                    DelayedInvoker.InvokeInTime(new Action(__instance.HideCombatStartWindow), Settings.Delay, true);
                 }
                 return false;
             }
